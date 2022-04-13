@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>twm</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+</head>
+<body>
+
+  <header>
+    <h1><a href="index.html">Travelling with the Movie</a> </h1>
+    <nav>
+      <ul>
+        <a href="#about"><li>About</li></a>
+        <a href="#snap"><li>Snap</li></a>
+        <a href="#news"><li>News</li></a>
+        <a href="#contact"><li>Contact</li></a>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="mainpic">
+    <img src="img/LA/panorama.jpg" alt="">
+  </div>
+  <main>
+
+    <section id="about">
+      <h1>About</h1>
+      <div class="profile">
+        <img src="img/LA/hamburger.jpg" alt="">
+        <div class="name">
+          <h2>REIJI YAMASHITA</h2>
+          <p>xxxxxxx-xxxxxxxxxxxxx-xxxxxxxxxxxxx-xxxxxxxxxxxxx-xxxxxxxxxxxxx-xxxxxxxxxxxxx-xxxxxxxxxxxxx-xxxxxxxxxxxxx-xxxxxx</p>
+        </div>
+      </div>
+      
+    </section>
+
+    <section id="snap">
+      <h1>Snap</h1> 
+      <!--写真①-->
+      <img class="mypic1" src="img/LA/wool.jpg" alt="" onclick="slide1()">
+        <script>
+          var pics1 = new Array("img/LA/wool.jpg","img/Guam/taxi.jpg","img/LA/pinkshot.jpg");
+          var num = 0;
+          function slide1(){
+              if (num == 2) {
+                  num = 0;
+              }
+              else {
+                  num ++;
+              }
+              document.querySelector(".mypic1").src = pics1[num];
+          }
+        </script>
+
+      <!-- 写真② -->
+      <img class="mypic2" src="img/LA/pinks.jpg" alt="" onclick="slide2()">
+        <script>
+          var pics2 = new Array("img/LA/pinks.jpg","img/Taipei/chinafood.jpg","img/Guam/shopping.jpg");
+          var num = 0;
+          function slide2(){
+              if (num == 2) {
+                  num = 0;
+              }
+              else {
+                  num ++;
+              }
+              document.querySelector(".mypic2").src = pics2[num];
+          }
+        </script>
+
+      <img src="img/LA/mid90s_9869.jpg" alt="">
+      <img src="img/LA/wings.jpg" alt="">
+      <img src="img/LA/displaymap.jpg" alt="">
+      <img src="img/Guam/breakfast.jpg" alt="">
+    </section>
+    <script>
+
+    </script>
+
+    <section id="news">
+      <h1>News</h1>
+      <dl>
+        <dt>2036.1.1</dt>
+        <dd>フィンランドでオーロラを見る</dd>
+
+        <dt>2031.11.22</dt>
+        <dd>マレーシアに移住</dd>
+
+        <dt>2030.11.22</dt>
+        <dd>結婚</dd>
+
+        <dt>2027.4.1</dt>
+        <dd>転職</dd>
+
+        <dt>2025.1.1</dt>
+        <dd>英語ペラペラ</dd>
+
+        <dt>2022.4.17</dt>
+        <dd>Happy Birthday</dd>
+      </dl>
+    </section>
+
+    <section id="contact">
+      <h1>Contact</h1>
+      <a href="https://www.instagram.com/_twm____/?ref=badge" class="insta_btn">
+        <span class="insta">
+          <i class="fab fa-instagram"></i>
+        </span>
+      </a>
+    </section>
+
+  </main>
+  
+  <footer>(c)copy right</footer>
+
+</body>
+</html>
