@@ -22,6 +22,10 @@ header h1{
   
 }
 
+h1{
+  margin-top: 100px;
+}
+
 a{
   text-decoration: none;
   color: black;
@@ -58,7 +62,7 @@ main{
   width: 100%;
   /* max-width: 720px; */
   object-fit: cover;
-  margin-bottom: 80px;
+  /* margin-bottom: 80px; */
 }
 
 /* section common */
@@ -105,21 +109,17 @@ section h1{
 }
 
 #snap img{
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   object-fit: cover;
-  margin-bottom: 5px;
-}
-
-#snap img + img{
-  margin-left: 5px;
-
+  margin-bottom: 10px;
+  margin-left: 10px;
 }
 
 /* news */
 dl{
   margin: 0 10%;
-  font-size: 20px;
+  font-size: 18px;
   border-top: 1px solid gray;
   /* font-family: "BIZ UD明朝","BIZ UDMincho"; */
   font-family: "UD デジタル 教科書体 N-R","UD Digi Kyokasho N-R";
@@ -190,6 +190,11 @@ dd{
   font-size: 35px;/*アイコンサイズ*/
   line-height: 50px;/*高さと合わせる*/
 }
+
+
+/* twitter */
+
+
 
 /* footer */
 footer{
