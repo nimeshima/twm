@@ -209,7 +209,7 @@ footer{
 }
 
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:500px) {
   .mainpic{
     width: 100%;
     
@@ -257,6 +257,9 @@ footer{
   /* news */
   dl{
     font-size: 12px;
+  }
+  dt{
+    width: 80px;
   }
 
 }
