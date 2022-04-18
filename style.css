@@ -115,7 +115,7 @@ section h1{
   height: 350px;
   object-fit: cover;
   margin-bottom: 10px;
-  margin-left: 10px;
+  /* margin-left: 10px; */
   cursor: pointer;
   cursor: hand;
 }
@@ -206,4 +206,57 @@ dd{
 footer{
   text-align: center;
   background: #0cc;
+}
+
+
+@media screen and (max-width:480px) {
+  .mainpic{
+    width: 100%;
+    
+  }
+
+  .mainpic img{
+    height: 200px;
+  }
+
+  header {
+    height: 120px;
+  }
+
+  header h1{
+    font-size: 20px;
+  }
+
+  a + a{
+    margin-left: 10px;
+  }
+
+  header li{
+    font-size: 12px;
+  }
+
+  /* main */
+  /* about */
+  main h1{
+    font-size: 20px;
+    margin-top: 50px;
+  }
+  #about img{
+    width: 100px;
+    height: 100px;
+  }
+  .name {
+    width: 50%;
+    margin-left: 15px;
+  }
+  #snap img {
+    width: 300px;
+    height: 300px;
+  }
+
+  /* news */
+  dl{
+    font-size: 12px;
+  }
+
 }
