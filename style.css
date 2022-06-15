@@ -210,9 +210,10 @@ footer{
 
 
 @media screen and (max-width:500px) {
+
+  /*header*/
   .mainpic{
     width: 100%;
-    
   }
 
   .mainpic img{
@@ -220,15 +221,28 @@ footer{
   }
 
   header {
-    height: 120px;
+    height: 100px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   header h1{
     font-size: 20px;
+    width: 60%;
+    margin:auto;
+    padding-left:0;
+    padding-top: 18px;
   }
 
-  a + a{
-    margin-left: 10px;
+  nav {
+    margin: 0;
+    padding-bottom: 5px;
+  }
+
+  nav > ul {
+    padding: 0;
+    justify-content: center;
   }
 
   header li{
@@ -236,19 +250,35 @@ footer{
   }
 
   /* main */
+  section {
+     margin-top: 50px;
+  }
   /* about */
   main h1{
     font-size: 20px;
-    margin-top: 50px;
+    margin-top: 0;
+    margin-bottom:30px;
   }
+
+  .profile {
+    display: block;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
   #about img{
     width: 100px;
     height: 100px;
+    margin: 0;
   }
+
   .name {
-    width: 50%;
-    margin-left: 15px;
+    width:80%;
+    padding-top: 30px;
+    margin:auto;
   }
+
   #snap img {
     width: 300px;
     height: 300px;
