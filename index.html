@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
 </head>
 <body>
 
@@ -23,9 +26,36 @@
     </nav>
   </header>
 
-  <div class="mainpic">
-    <img src="img/LA/panorama.jpg" alt="">
+  <div class="swiper mainpic">
+    <!-- 必要に応じたwrapper -->
+    <div class="swiper-wrapper">
+      <!-- スライド -->
+      <div class="swiper-slide"><img src="img/LA/aurora.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="img/bigben.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="img/LA/grandcanyon.jpg" alt=""></div>
+      
+    </div>
   </div>
+  <!-- 必要に応じてページネーション -->
+  <div class="swiper-pagination"></div>
+  <!-- 必要に応じてナビボタン -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <script>
+    const swiper = new Swiper(".swiper", {
+      // ページネーションが必要なら追加
+      pagination: {
+        el: ".swiper-pagination"
+      },
+      // ナビボタンが必要なら追加
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      }
+    });
+  </script>
+ 
   <main>
 
     <section id="about">

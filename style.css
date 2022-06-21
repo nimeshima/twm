@@ -67,6 +67,11 @@ main{
   /* margin-bottom: 80px; */
 }
 
+.swiper-button-prev:after,
+.swiper-button-next:after {
+ color: gray;
+}
+
 /* section common */
 section{
   width: 100%;
